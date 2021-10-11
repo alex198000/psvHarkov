@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4404567290872157276}
   - component: {fileID: 4404567290872157279}
   - component: {fileID: 6463830213403397723}
-  - component: {fileID: -8730929989852252047}
+  - component: {fileID: 5783953715771382251}
   m_Layer: 7
   m_Name: Froot
   m_TagString: Untagged
@@ -111,7 +111,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28731227, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-8730929989852252047
+--- !u!114 &5783953715771382251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,8 +120,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4404567290872157277}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f88b3a9f4ae2704bbca367440bcceec, type: 3}
+  m_Script: {fileID: 11500000, guid: a4be61e1b6ff5444caa3a19fba070405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodSprite: {fileID: 0}
-  foodValue: 0
+  bonus: 20
+  effect: {fileID: 7191280823050220587, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
