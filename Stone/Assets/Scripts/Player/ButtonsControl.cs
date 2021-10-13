@@ -7,10 +7,14 @@ namespace Level1
     public class ButtonsControl : MonoBehaviour
     {
         [SerializeField] MyPlayerMovement myPlayerMovement;
-        //[SerializeField] PlayerAttack playerAttack;
+        [SerializeField] private GameObject _canvasPanel;
+        [SerializeField] private GameObject _winPanel;
+        [SerializeField] private GameObject _defeatPanel;
+        [SerializeField] private GameObject _pausePanel;
         void Update()
         {
             MooveBut();
+            ESCbutton();
         }
         public void MooveBut()
         {
@@ -35,6 +39,23 @@ namespace Level1
                 myPlayerMovement.StopMove();
             }
 
+        }
+        void ESCbutton()                             // кнопка esc или  шаг назад на телефоне
+        {
+            if (Input.GetKeyDown(KeyCode.Escape) && _canvasPanel.activeSelf == true && _winPanel.activeSelf == false && _defeatPanel.activeSelf == false && _pausePanel.activeSelf == false)
+            {
+                _pausePanel.SetActive(true);
+                _canvasPanel.SetActive(false);
+                Time.timeScale = 0;
+               
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape) && _pausePanel.activeSelf == true)
+            {
+                _canvasPanel.SetActive(true);
+                _pausePanel.SetActive(false);
+                Time.timeScale = 1;
+            }
+                    
         }
     }
 

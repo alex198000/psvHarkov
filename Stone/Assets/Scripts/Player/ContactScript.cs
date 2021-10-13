@@ -13,6 +13,7 @@ namespace Level1
         [SerializeField] private GameObject defGame;
         [SerializeField] private GameObject winExp;
         [SerializeField] private GameObject eatFruit;
+        [SerializeField] private PlayerHealth _playerHealth;
 
 
         //private void OnEnable()
@@ -38,7 +39,8 @@ namespace Level1
                 Destroy(dangerous, 5f);
                 defGame.SetActive(true);
                 canvasPanel.SetActive(false);
-                gameObject.SetActive(false);
+                _playerHealth.Die();
+                //gameObject.SetActive(false);
             }
 
 

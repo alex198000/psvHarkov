@@ -6,10 +6,10 @@ namespace Level1
 {
     public class PlayerHealth : Alive
     {
-        [SerializeField] private Animator animator;
+        [SerializeField] private Animator _animator;
         public override void Die()
         {
-            // animator.Play("Die", 3);
+            _animator.SetTrigger("Die");
         }
 
 
