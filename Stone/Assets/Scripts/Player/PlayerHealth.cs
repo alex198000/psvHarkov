@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Level1
@@ -11,8 +9,6 @@ namespace Level1
         {
             _animator.SetTrigger("Die");
         }
-
-
     }
 }
 

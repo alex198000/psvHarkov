@@ -100,6 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonus: -100
   effect: {fileID: 7191280823050220587, guid: d7ece0a9dee235945844cb27ccdfb18b, type: 3}
+  playerHealth: {fileID: 0}
+  defeatGame: {fileID: 0}
 --- !u!61 &5822205730270289569
 BoxCollider2D:
   m_ObjectHideFlags: 0
