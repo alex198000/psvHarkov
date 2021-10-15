@@ -6,6 +6,16 @@ namespace Level1
     {
         [SerializeField] private PlayerHealth playerHealth;
         [SerializeField] private GameObject defeatGame;
+
+        private void OnEnable()
+        {
+            
+        }
+
+        private void OnDisable()
+        {
+            
+        }
         public override void Contact()
         {
             playerHealth.Die();

@@ -371,6 +371,7 @@
 "Assets/Scripts/abstract/BaseMushroom.cs"
 "Assets/Scripts/Foodscripts/Banana.cs"
 "Assets/Scripts/Level1/ButtonManager.cs"
+"Assets/Scripts/MainMenu/AnimatorController.cs"
 "Assets/Scripts/MainMenu/MenuUI.cs"
 "Assets/Scripts/Mushrom/Muhomor.cs"
 "Assets/Scripts/Mushrom/Mushroom.cs"
