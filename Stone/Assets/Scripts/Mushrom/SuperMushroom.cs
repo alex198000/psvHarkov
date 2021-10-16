@@ -4,22 +4,17 @@ namespace Level1
 {
     public class SuperMushroom : BaseFructs
     {
-        [SerializeField] private GameObject winGame;
-
-        private void OnEnable()
-        {
-            
-        }
-
-        private void OnDisable()
-        {
-            
-        }
+        [SerializeField] private GameObject _winGame;
         public override void Contact()
         {
-            GameObject bonusEffect =  Instantiate(effect, transform.position, transform.rotation);
+            GameObject bonusEffect =  Instantiate(_effect, transform.position, transform.rotation);
             Destroy(bonusEffect, 5f);
-            winGame.SetActive(true);
+            _winGame.SetActive(true);
+        }
+
+        public override void UpdateScore()
+        {
+            _uiController.score += bonus;
         }
     }
 }

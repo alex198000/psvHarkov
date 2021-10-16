@@ -996,6 +996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Froot (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5783953715771382251, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
 --- !u!1 &464723306
@@ -1876,6 +1880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Froot (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5783953715771382251, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
 --- !u!1001 &1202648988
@@ -1886,9 +1894,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 808014203}
     m_Modifications:
     - target: {fileID: 2866205552133778852, guid: 6df03ad17e43e204a9772df549931db2, type: 3}
-      propertyPath: bonus
-      value: 15
-      objectReference: {fileID: 0}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     - target: {fileID: 5377965480311545874, guid: 6df03ad17e43e204a9772df549931db2, type: 3}
       propertyPath: m_Name
       value: Orange
@@ -2375,9 +2383,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 808014203}
     m_Modifications:
     - target: {fileID: 2866205552133778852, guid: 6df03ad17e43e204a9772df549931db2, type: 3}
-      propertyPath: bonus
-      value: 15
-      objectReference: {fileID: 0}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     - target: {fileID: 5377965480311545874, guid: 6df03ad17e43e204a9772df549931db2, type: 3}
       propertyPath: m_Name
       value: Orange (1)
@@ -2483,6 +2491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Froot (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5783953715771382251, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
 --- !u!1001 &1521633032
@@ -2540,6 +2552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Froot (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5783953715771382251, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
 --- !u!1 &1529710690
@@ -2813,6 +2829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585712241}
   - component: {fileID: 1585712240}
+  - component: {fileID: 1585712242}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -2848,6 +2865,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1585712242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585712239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d9e737f8b6697448e3062920559740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textScore: {fileID: 769982197}
+  score: 0
 --- !u!1001 &1597391870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2855,6 +2886,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567770546}
     m_Modifications:
+    - target: {fileID: -6482310828806175097, guid: 54f0a664da208184fabfc1f96d021847, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     - target: {fileID: 4271166848646539970, guid: 54f0a664da208184fabfc1f96d021847, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3480,6 +3515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Froot (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5783953715771382251, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
 --- !u!1 &306979013249378848
@@ -16069,13 +16108,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1567770546}
     m_Modifications:
     - target: {fileID: -3872487333446805560, guid: 2e459f26b9054e048899a8ce46517ab4, type: 3}
-      propertyPath: defeatGame
+      propertyPath: _defeatGame
       value: 
       objectReference: {fileID: 1811605041}
     - target: {fileID: -3872487333446805560, guid: 2e459f26b9054e048899a8ce46517ab4, type: 3}
-      propertyPath: playerHealth
+      propertyPath: _playerHealth
       value: 
       objectReference: {fileID: 967619291639319326}
+    - target: {fileID: -3872487333446805560, guid: 2e459f26b9054e048899a8ce46517ab4, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     - target: {fileID: 2568335842188643832, guid: 2e459f26b9054e048899a8ce46517ab4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -16133,10 +16176,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567770546}
     m_Modifications:
-    - target: {fileID: 4160209024073768810, guid: 54f0a664da208184fabfc1f96d021847, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: -6482310828806175097, guid: 54f0a664da208184fabfc1f96d021847, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     - target: {fileID: 4271166848646539970, guid: 54f0a664da208184fabfc1f96d021847, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -16194,10 +16237,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567770546}
     m_Modifications:
-    - target: {fileID: 2433867935718409702, guid: 218903263ed65b045b1d740b2d996692, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2624344351712129810, guid: 218903263ed65b045b1d740b2d996692, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -16246,6 +16285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_3
       objectReference: {fileID: 0}
+    - target: {fileID: 6514750129703346166, guid: 218903263ed65b045b1d740b2d996692, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 218903263ed65b045b1d740b2d996692, type: 3}
 --- !u!1001 &3923975566326425287
@@ -16430,9 +16473,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8342158138403912988, guid: ffe8dc55c6327634b83c16b0d1faedb1, type: 3}
-      propertyPath: winGame
+      propertyPath: _winGame
       value: 
       objectReference: {fileID: 1849300256}
+    - target: {fileID: 8342158138403912988, guid: ffe8dc55c6327634b83c16b0d1faedb1, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffe8dc55c6327634b83c16b0d1faedb1, type: 3}
 --- !u!1001 &7225553914155951515
@@ -16442,6 +16489,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567770546}
     m_Modifications:
+    - target: {fileID: 3391480766192090614, guid: 5efce86ad1b533a4b987d8110a8f6294, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     - target: {fileID: 7575896544949609623, guid: 5efce86ad1b533a4b987d8110a8f6294, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -16490,10 +16541,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_2
       objectReference: {fileID: 0}
-    - target: {fileID: 8766784465920178994, guid: 5efce86ad1b533a4b987d8110a8f6294, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5efce86ad1b533a4b987d8110a8f6294, type: 3}
 --- !u!1001 &7584766824823443807
@@ -16503,6 +16550,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567770546}
     m_Modifications:
+    - target: {fileID: -6482310828806175097, guid: 54f0a664da208184fabfc1f96d021847, type: 3}
+      propertyPath: _uiController
+      value: 
+      objectReference: {fileID: 1585712242}
     - target: {fileID: 4271166848646539970, guid: 54f0a664da208184fabfc1f96d021847, type: 3}
       propertyPath: m_RootOrder
       value: 1

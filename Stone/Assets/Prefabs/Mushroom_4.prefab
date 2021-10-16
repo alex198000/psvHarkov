@@ -99,9 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonus: -100
-  effect: {fileID: 7191280823050220587, guid: d7ece0a9dee235945844cb27ccdfb18b, type: 3}
-  playerHealth: {fileID: 0}
-  defeatGame: {fileID: 0}
+  _effect: {fileID: 7191280823050220587, guid: d7ece0a9dee235945844cb27ccdfb18b, type: 3}
+  _uiController: {fileID: 0}
+  _playerHealth: {fileID: 0}
+  _defeatGame: {fileID: 0}
 --- !u!61 &5822205730270289569
 BoxCollider2D:
   m_ObjectHideFlags: 0

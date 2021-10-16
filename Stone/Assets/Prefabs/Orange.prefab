@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4404567290872157276, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.93
+      value: 10.13
       objectReference: {fileID: 0}
     - target: {fileID: 4404567290872157276, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56275916
+      value: 3.18
       objectReference: {fileID: 0}
     - target: {fileID: 4404567290872157276, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -53,11 +53,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4404567290872157277, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
       propertyPath: m_Name
-      value: Froot (6)
+      value: Orange (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4404567290872157279, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300016, guid: c2ce07b4cfe39e340b8238f75e7a21d2, type: 3}
+    - target: {fileID: 5783953715771382251, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: bonus
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}

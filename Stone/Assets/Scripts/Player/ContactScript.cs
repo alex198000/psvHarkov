@@ -5,7 +5,8 @@ namespace Level1
 {
     public class ContactScript : MonoBehaviour
     {
-        public static event Action ScorePlus;
+       public static Action ScorePlus;
+       
         void OnTriggerEnter2D(Collider2D otherCol)
         {
             BaseFructs fruit = otherCol.gameObject.GetComponent<BaseFructs>();
@@ -13,6 +14,7 @@ namespace Level1
             if (fruit != null)                                     //контакт с фруктами и грибами
             {
                 fruit.Contact();
+                fruit.UpdateScore();
                 Destroy(otherCol.gameObject);
                 ScorePlus?.Invoke();
             }           
