@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Level1
+namespace Levels
 {
     public abstract class BaseMushroom : MonoBehaviour
     {

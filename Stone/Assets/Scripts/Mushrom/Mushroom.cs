@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Level1
+namespace Levels
 {
     public class Mushroom : BaseFructs
     {

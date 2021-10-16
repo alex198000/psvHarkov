@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Level1
+namespace Levels
 {
     public class ButtonsControl : MonoBehaviour
     {
@@ -38,7 +36,6 @@ namespace Level1
             {
                 myPlayerMovement.StopMove();
             }
-
         }
         void ESCbutton()                             // кнопка esc или  шаг назад на телефоне
         {
@@ -46,17 +43,14 @@ namespace Level1
             {
                 _pausePanel.SetActive(true);
                 _canvasPanel.SetActive(false);
-                Time.timeScale = 0;
-               
+                Time.timeScale = 0;               
             }
             else if (Input.GetKeyDown(KeyCode.Escape) && _pausePanel.activeSelf == true)
             {
                 _canvasPanel.SetActive(true);
                 _pausePanel.SetActive(false);
                 Time.timeScale = 1;
-            }
-                    
+            }                    
         }
     }
-
 }

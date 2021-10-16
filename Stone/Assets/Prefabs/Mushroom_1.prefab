@@ -101,6 +101,7 @@ MonoBehaviour:
   bonus: 100
   _effect: {fileID: 7191280823050220587, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
   _uiController: {fileID: 0}
+  _playerHealth: {fileID: 0}
   _winGame: {fileID: 0}
 --- !u!61 &6625102766295567767
 BoxCollider2D:

@@ -14091,7 +14091,6 @@ GameObject:
   - component: {fileID: 967619291639319322}
   - component: {fileID: 977715032182245012}
   - component: {fileID: 967619291639319321}
-  - component: {fileID: 967619291639319324}
   - component: {fileID: 967619291639319323}
   - component: {fileID: 967619291639319325}
   - component: {fileID: 967619291639319326}
@@ -14115,11 +14114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86375b11faeffae4b9dfe8f27b9b4b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 200
-  playerJumpForce: 7
-  player: {fileID: 967619291639319320}
-  animObject: {fileID: 967495636190904918}
-  animator: {fileID: 882678543631579690}
+  _playerSpeed: 200
+  _playerJumpForce: 7
+  _player: {fileID: 967619291639319320}
+  _animObject: {fileID: 967495636190904918}
+  _animator: {fileID: 882678543631579690}
 --- !u!58 &967619291639319322
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14155,18 +14154,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &967619291639319324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967619291639319320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89efc846301ec9e41b33d43ad1b1c084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &967619291639319325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16476,6 +16463,10 @@ PrefabInstance:
       propertyPath: _winGame
       value: 
       objectReference: {fileID: 1849300256}
+    - target: {fileID: 8342158138403912988, guid: ffe8dc55c6327634b83c16b0d1faedb1, type: 3}
+      propertyPath: _playerHealth
+      value: 
+      objectReference: {fileID: 967619291639319326}
     - target: {fileID: 8342158138403912988, guid: ffe8dc55c6327634b83c16b0d1faedb1, type: 3}
       propertyPath: _uiController
       value: 

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Level1
+namespace Levels
 {
     public class ContactScript : MonoBehaviour
     {
