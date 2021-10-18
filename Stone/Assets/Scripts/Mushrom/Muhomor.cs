@@ -9,15 +9,14 @@ namespace Levels
         public override void Contact()
         {
             _playerHealth.Die();
-            GameObject danger = Instantiate(_effect, transform.position, transform.rotation);
-            Destroy(danger, 5f);
+            _particleDefeat.Play();
             _defeatGame.SetActive(true);
             //Time.timeScale = 0;
         }
 
         public override void UpdateScore()
         {
-            _uiController.score += bonus;
+            _uiController.Score += bonus;
         }
     }
 }

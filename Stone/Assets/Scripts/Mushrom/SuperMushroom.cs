@@ -9,14 +9,13 @@ namespace Levels
         public override void Contact()
         {
             _playerHealth.Win();
-            GameObject bonusEffect =  Instantiate(_effect, transform.position, transform.rotation);
-            Destroy(bonusEffect, 5f);
+            _particleWin.Play();
             _winGame.SetActive(true);
         }
 
         public override void UpdateScore()
         {
-            _uiController.score += bonus;
+            _uiController.Score += bonus;
         }
     }
 }

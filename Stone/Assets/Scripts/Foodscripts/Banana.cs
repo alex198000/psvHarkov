@@ -1,3 +1,4 @@
+using UnityEngine;
 
 namespace Levels
 {
@@ -5,11 +6,11 @@ namespace Levels
     {       
         public override void Contact()
         {
-            Instantiate(_effect, transform.position, transform.rotation);
+            _particleFruit.Play();
         }
         public override void UpdateScore()
         {
-            _uiController.score += bonus;
+            _uiController.Score += bonus;
         }
     }
 }

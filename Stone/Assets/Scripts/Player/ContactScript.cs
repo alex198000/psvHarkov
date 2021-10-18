@@ -5,7 +5,7 @@ namespace Levels
 {
     public class ContactScript : MonoBehaviour
     {
-       public static Action ScorePlus;
+       public static event Action OnScorePlus;
        
         void OnTriggerEnter2D(Collider2D otherCol)
         {
@@ -15,8 +15,8 @@ namespace Levels
             {
                 fruit.Contact();
                 fruit.UpdateScore();
-                Destroy(otherCol.gameObject);
-                ScorePlus?.Invoke();
+                otherCol.gameObject.SetActive(false);
+                OnScorePlus?.Invoke();
             }           
         }
     }

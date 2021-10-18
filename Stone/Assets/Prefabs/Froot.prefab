@@ -126,3 +126,7 @@ MonoBehaviour:
   bonus: 10
   _effect: {fileID: 7191280823050220587, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
   _uiController: {fileID: 0}
+  _particleFruit: {fileID: 7605483122495174252, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
+  _particleMush: {fileID: 7605483122495174252, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
+  _particleWin: {fileID: 7605483122495174252, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
+  _particleDefeat: {fileID: 7605483122495174252, guid: d7ece0a9dee235945844cb27ccdfb18b, type: 3}

@@ -2878,7 +2878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textScore: {fileID: 769982197}
-  score: 0
+  _score: 0
 --- !u!1001 &1597391870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16273,9 +16273,25 @@ PrefabInstance:
       value: Mushroom_3
       objectReference: {fileID: 0}
     - target: {fileID: 6514750129703346166, guid: 218903263ed65b045b1d740b2d996692, type: 3}
+      propertyPath: _particleWin
+      value: 
+      objectReference: {fileID: 7605483122495174252, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
+    - target: {fileID: 6514750129703346166, guid: 218903263ed65b045b1d740b2d996692, type: 3}
+      propertyPath: _particleMush
+      value: 
+      objectReference: {fileID: 7605483122495174252, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
+    - target: {fileID: 6514750129703346166, guid: 218903263ed65b045b1d740b2d996692, type: 3}
       propertyPath: _uiController
       value: 
       objectReference: {fileID: 1585712242}
+    - target: {fileID: 6514750129703346166, guid: 218903263ed65b045b1d740b2d996692, type: 3}
+      propertyPath: _particleFruit
+      value: 
+      objectReference: {fileID: 7605483122495174252, guid: 0fb132a5d7f317344aba2dc51d50e72f, type: 3}
+    - target: {fileID: 6514750129703346166, guid: 218903263ed65b045b1d740b2d996692, type: 3}
+      propertyPath: _particleDefeat
+      value: 
+      objectReference: {fileID: 7605483122495174252, guid: d7ece0a9dee235945844cb27ccdfb18b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 218903263ed65b045b1d740b2d996692, type: 3}
 --- !u!1001 &3923975566326425287

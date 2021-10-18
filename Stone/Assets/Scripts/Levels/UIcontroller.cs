@@ -6,20 +6,20 @@ namespace Levels
     public class UIcontroller : MonoBehaviour
     {
         [SerializeField] private Text _textScore;
-        [SerializeField] public int score;
+        [SerializeField] private int _score;
         private void OnEnable()
         {
-            ContactScript.ScorePlus += UpdateScore;
+            ContactScript.OnScorePlus += UpdateScore;
         }
 
         private void OnDisable()
         {
-            ContactScript.ScorePlus -= UpdateScore;
+            ContactScript.OnScorePlus -= UpdateScore;
         }
-
+       public int Score {  get { return _score; } set { _score = value; } }
         public void UpdateScore()
         {
-            _textScore.text = score.ToString();
+            _textScore.text = _score.ToString();
         }       
     }
 }
