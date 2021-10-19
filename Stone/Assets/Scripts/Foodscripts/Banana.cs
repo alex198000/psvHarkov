@@ -3,10 +3,15 @@ using UnityEngine;
 namespace Levels
 {
     public class Banana : BaseFructs
-    {       
+    {
+        //private void Start()
+        //{
+        //    _particleFruit.Stop();
+        //}
         public override void Contact()
         {
-            _particleFruit.Play();
+           // if (_particleFruit.isStopped)
+                _particleFruit.Play();
         }
         public override void UpdateScore()
         {

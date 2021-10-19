@@ -12,7 +12,7 @@ namespace Levels
         [SerializeField] private GameObject _animObject;
         [SerializeField] private Animator _animator;
         private Rigidbody2D _rb;
-        private SpriteRenderer _spriteRenderer;
+        //private SpriteRenderer _spriteRenderer;
         private float _currentPlayerSpeed;
         private bool _groundCheck;
 
