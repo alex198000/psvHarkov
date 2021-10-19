@@ -4,7 +4,7 @@ namespace Levels
 {
     public abstract class BaseFructs : MonoBehaviour
     {
-        [SerializeField] public int bonus;
+        [SerializeField] protected int bonus;
         //[SerializeField] protected GameObject _effect;
         [SerializeField] protected UIcontroller _uiController;
         [SerializeField] protected ParticleSystem _particleFruit;
