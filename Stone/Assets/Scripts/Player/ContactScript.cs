@@ -7,11 +7,11 @@ namespace Levels
     {
        public static event Action OnScorePlus;
        
-        void OnTriggerEnter2D(Collider2D otherCol)
+        void OnTriggerEnter2D(Collider2D otherCol)     //контакт с фруктами и грибами
         {
             BaseFructs fruit = otherCol.gameObject.GetComponent<BaseFructs>();
             
-            if (fruit != null)                                     //контакт с фруктами и грибами
+            if (fruit != null)                                     
             {
                 fruit.Contact();
                 fruit.UpdateScore();

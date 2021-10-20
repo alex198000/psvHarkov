@@ -8,9 +8,7 @@ namespace MainMenu
         void Start()
         {
             _animator.SetTrigger("Nasos");
-        }
-
-        
+        }        
     }
 }
 

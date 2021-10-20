@@ -4,7 +4,7 @@ namespace Levels
 {
     public class ButtonsControl : MonoBehaviour
     {
-        [SerializeField] MyPlayerMovement myPlayerMovement;
+        [SerializeField] private MyPlayerMovement myPlayerMovement;
         [SerializeField] private GameObject _canvasPanel;
         [SerializeField] private GameObject _winPanel;
         [SerializeField] private GameObject _defeatPanel;
@@ -14,7 +14,7 @@ namespace Levels
             MooveBut();
             ESCbutton();
         }
-        public void MooveBut()
+        public void MooveBut()                        // управление с клавиатуры
         {
             if (Input.GetButton("Jump") || Input.GetButton("Vertical") || Input.GetButton("Debug Vertical")) // Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)
             {
