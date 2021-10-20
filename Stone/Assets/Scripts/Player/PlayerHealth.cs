@@ -1,41 +1,22 @@
-using System.Collections;
 using UnityEngine;
 
 namespace Levels
 {
     public class PlayerHealth : Alive
     {
-        [SerializeField] private Animator _animator;
+        [SerializeField] private GameObject _defeatGame;
+        [SerializeField] private GameObject _winGame;
         public override void Die()
-        {            
-            StartCoroutine(Defeat());
+        {
+            gameObject.SetActive(false);
+           _defeatGame.SetActive(true);
         }
 
         public override void Win()
         {
-            StartCoroutine(PlayerWin());
-        }
-
-        IEnumerator Defeat()
-        {
-            _animator.SetTrigger("Die");
-            yield return new WaitForSeconds(1.2f);
             gameObject.SetActive(false);
-            //Time.timeScale = 0;
-
-            yield break;
+           _winGame.SetActive(true);
         }
-
-        IEnumerator PlayerWin()
-        {
-            _animator.SetTrigger("Win");
-            yield return new WaitForSeconds(1.2f);
-            gameObject.SetActive(false);
-            //Time.timeScale = 0;
-
-            yield break;
-        }
-    }
-    
+    }    
 }
 

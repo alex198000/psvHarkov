@@ -112,6 +112,7 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/DOTween/DOTween.dll"
 -r:"C:/Users/user/Documents/GitHub/psvHarkov/Stone/Library/PackageCache/com.unity.cinemachine@2.7.5/Runtime/ThirdParty/clipper_library.dll"
 -r:"D:/Unity 2021.1.3f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/Unity 2021.1.3f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -340,6 +341,14 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
+"Assets/DOTween/Modules/DOTweenModuleAudio.cs"
+"Assets/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+"Assets/DOTween/Modules/DOTweenModulePhysics.cs"
+"Assets/DOTween/Modules/DOTweenModulePhysics2D.cs"
+"Assets/DOTween/Modules/DOTweenModuleSprite.cs"
+"Assets/DOTween/Modules/DOTweenModuleUI.cs"
+"Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+"Assets/DOTween/Modules/DOTweenModuleUtils.cs"
 "Assets/Samples/Cinemachine/2.7.5/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/ActivateOnKeypress.cs"
 "Assets/Samples/Cinemachine/2.7.5/Cinemachine Example Scenes/Scenes/AimingRig/AimReticle.cs"
 "Assets/Samples/Cinemachine/2.7.5/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerLookAt.cs"
@@ -373,6 +382,7 @@
 "Assets/Scripts/Levels/ButtonManager.cs"
 "Assets/Scripts/Levels/UIcontroller.cs"
 "Assets/Scripts/MainMenu/AnimatorController.cs"
+"Assets/Scripts/MainMenu/ConteinerEnums.cs"
 "Assets/Scripts/MainMenu/MenuUI.cs"
 "Assets/Scripts/Mushrom/Muhomor.cs"
 "Assets/Scripts/Mushrom/Mushroom.cs"

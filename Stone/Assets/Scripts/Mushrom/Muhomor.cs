@@ -4,16 +4,12 @@ namespace Levels
 {
     public class Muhomor : BaseFructs
     {
-        [SerializeField] private PlayerHealth _playerHealth;
-        [SerializeField] private GameObject _defeatGame;
+        [SerializeField] private Animator _animator;
         public override void Contact()
         {
-            _playerHealth.Die();
+            _animator.SetTrigger("Die");
             _particleDefeat.Play();
-            _defeatGame.SetActive(true);
-            //Time.timeScale = 0;
         }
-
         public override void UpdateScore()
         {
             _uiController.Score += bonus;

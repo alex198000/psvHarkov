@@ -1,4 +1,3 @@
-using UnityEngine;
 
 namespace Levels
 {
@@ -8,7 +7,6 @@ namespace Levels
         {
             _particleMush.Play();
         }
-
         public override void UpdateScore()
         {
             _uiController.Score += bonus; 
