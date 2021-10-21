@@ -2,11 +2,11 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-Stone[Ll]ibrary/
-Stone[Tt]emp/
-Stone[Oo]bj/
+*Stone[Ll]ibrary/
+*Stone[Tt]emp/
+*Stone[Oo]bj/
 Stone/[Bb]ild/
-Stone/[Bb]uilds/
+*Stone/[Bb]uilds/
 Stone/[Ll]ogs/
 Stone/[Mm]emoryCaptures/
 
