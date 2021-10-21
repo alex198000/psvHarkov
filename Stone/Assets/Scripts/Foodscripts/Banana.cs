@@ -3,14 +3,29 @@ namespace Levels
 {
     public class Banana : BaseFructs
     {
-        public override void Contact()
+        private void OnEnable()
         {
-           // if (_particleFruit.isStopped)
-                _particleFruit.Play();
+            ContactScript.OnScorePlus += DeActiv;
+        }
+        private void OnDisable()
+        {
+            ContactScript.OnScorePlus -= DeActiv;
+        }
+        public override void Contact()
+        {           
+          _particle.Play();
         }
         public override void UpdateScore()
         {
             _uiController.Score += bonus;
+        }
+
+        public override void DeActiv()
+        {
+            if (_particle.isStopped)
+            {
+                _objDeactiv.gameObject.SetActive(false);
+            }            
         }
     }
 }

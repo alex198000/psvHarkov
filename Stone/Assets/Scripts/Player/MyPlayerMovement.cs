@@ -20,6 +20,18 @@ namespace Levels
         {
             _rb = GetComponent<Rigidbody2D>();
         }
+
+        private void OnEnable()
+        {
+            SuperMushroom.OnPlayerWin += PlayerWin;
+            Muhomor.OnPlayerDefeat += PlayerDefeat;
+        }
+
+        private void OnDisable()
+        {
+            SuperMushroom.OnPlayerWin -= PlayerWin;
+            Muhomor.OnPlayerDefeat -= PlayerDefeat;
+        }
         private void FixedUpdate()
         {
             _rb.velocity = new Vector2(_currentPlayerSpeed * Time.deltaTime, _rb.velocity.y);
@@ -51,6 +63,16 @@ namespace Levels
         private void OnTriggerEnter2D(Collider2D collision)
         {
             _groundCheck = true;
+        }
+
+        private void PlayerWin()
+        {
+            _animator.SetTrigger("Win");
+        }
+
+        private void PlayerDefeat()
+        {
+            _animator.SetTrigger("Die");
         }
     }
 }

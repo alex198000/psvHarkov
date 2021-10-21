@@ -1,18 +1,36 @@
-using UnityEngine;
+using System;
 
 namespace Levels
 {
     public class Muhomor : BaseFructs
     {
-        [SerializeField] private Animator _animator;
+        public static event Action OnPlayerDefeat;
+
+        private void OnEnable()
+        {
+            ContactScript.OnScorePlus += DeActiv;
+        }
+        private void OnDisable()
+        {
+            ContactScript.OnScorePlus -= DeActiv;
+        }
         public override void Contact()
         {
-            _animator.SetTrigger("Die");
-            _particleDefeat.Play();
-        }
+            _particle.Play();
+            OnPlayerDefeat?.Invoke();
+        }       
+
         public override void UpdateScore()
         {
             _uiController.Score += bonus;
+        }
+
+        public override void DeActiv()
+        {
+            if (_particle.isStopped)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

@@ -384,6 +384,7 @@
 "Assets/Scripts/MainMenu/AnimatorController.cs"
 "Assets/Scripts/MainMenu/ButtonCristal.cs"
 "Assets/Scripts/MainMenu/ConteinerEnums.cs"
+"Assets/Scripts/MainMenu/DoTween.cs"
 "Assets/Scripts/MainMenu/HUD.cs"
 "Assets/Scripts/MainMenu/ImageCristal.cs"
 "Assets/Scripts/MainMenu/MenuUI.cs"

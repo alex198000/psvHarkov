@@ -1,18 +1,35 @@
-using UnityEngine;
+using System;
 
 namespace Levels
 {
     public class SuperMushroom : BaseFructs
     {
-        [SerializeField] private Animator _animator;
+        public static event Action OnPlayerWin;
+        private void OnEnable()
+        {
+            ContactScript.OnScorePlus += DeActiv;
+        }
+        private void OnDisable()
+        {
+            ContactScript.OnScorePlus -= DeActiv;
+        }
+      
         public override void Contact()
         {
-            _animator.SetTrigger("Win");
-            _particleWin.Play();
+            _particle.Play();
+            OnPlayerWin?.Invoke();
         }
         public override void UpdateScore()
         {
             _uiController.Score += bonus;
+        }
+
+        public override void DeActiv()
+        {
+            if (_particle.isStopped)
+            {
+                _objDeactiv.gameObject.SetActive(false);
+            }
         }
     }
 }
