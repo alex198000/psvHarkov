@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,15 +9,20 @@ namespace Levels
         [SerializeField] private GameObject _pausePanel;
         [SerializeField] private GameObject _canvasPanel;
 
+        public static event Action OnNextLevel;
+        public static event Action OnRepeatLevel;
+
         public void NextLevel()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            Time.timeScale = 1;
+            OnNextLevel?.Invoke();
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //Time.timeScale = 1;
         }
         public void Repeat()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Time.timeScale = 1;
+            OnRepeatLevel?.Invoke();
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //Time.timeScale = 1;
         }
 
         public void Menu()

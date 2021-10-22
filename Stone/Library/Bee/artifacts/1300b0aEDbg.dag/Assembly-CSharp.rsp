@@ -378,6 +378,8 @@
 "Assets/Scripts/abstract/Alive.cs"
 "Assets/Scripts/abstract/BaseFructs.cs"
 "Assets/Scripts/abstract/BaseMushroom.cs"
+"Assets/Scripts/Enot/EnotButtonsControl.cs"
+"Assets/Scripts/Enot/EnotSpine.cs"
 "Assets/Scripts/Foodscripts/Banana.cs"
 "Assets/Scripts/Levels/ButtonManager.cs"
 "Assets/Scripts/Levels/UIcontroller.cs"

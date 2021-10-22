@@ -33,6 +33,12 @@ namespace MainMenu
             _tween = _panelLevels.transform.DOMove(new Vector3(_panelLevels.transform.position.x, _panelLevels.transform.position.y + 12, _panelLevels.transform.position.z), 3f, true);
             _panelCanvas.SetActive(true);
         }
+
+        private void OnDisable()
+        {
+            _panelCristals.transform.DOKill();
+            _panelLevels.transform.DOKill();
+        }
     }
 }
 

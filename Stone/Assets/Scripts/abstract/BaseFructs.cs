@@ -11,7 +11,7 @@ namespace Levels
    
         public abstract void Contact();
         public abstract void UpdateScore();
-        public abstract void DeActiv();
+        //public abstract void DeActiv();
     }
 }
 
