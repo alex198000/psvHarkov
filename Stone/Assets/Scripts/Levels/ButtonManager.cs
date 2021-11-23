@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,6 +9,9 @@ namespace Levels
     {
         [SerializeField] private GameObject _pausePanel;
         [SerializeField] private GameObject _canvasPanel;
+        [SerializeField] private Transform _cameraPosition;
+
+        private Tween _tween = null;
 
         public static event Action OnNextLevel;
         public static event Action OnRepeatLevel;
@@ -33,9 +37,19 @@ namespace Levels
 
         public void Resume()
         {
-            _canvasPanel.SetActive(true);
-            _pausePanel.SetActive(false);
-            Time.timeScale = 1;
+            _tween = _pausePanel.transform.DOMove(new Vector3(_cameraPosition.position.x, _cameraPosition.position.y - 15, 0), 1f, true).SetEase(Ease.InBack).SetUpdate(true).OnComplete(() =>
+            {
+                _canvasPanel.SetActive(true);
+                Time.timeScale = 1;
+            });
+        }
+
+        private void OnDisable()
+        {
+            if (DOTween.instance != null)
+            {
+                _tween?.Kill();
+            }
         }
     }
 }

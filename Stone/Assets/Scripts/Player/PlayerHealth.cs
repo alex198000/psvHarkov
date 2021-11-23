@@ -9,13 +9,13 @@ namespace Levels
         public override void Die()
         {
             gameObject.SetActive(false);
-           _defeatGame.SetActive(true);
+           //_defeatGame.SetActive(true);
         }
 
         public override void Win()
         {
             gameObject.SetActive(false);
-           _winGame.SetActive(true);
+          // _winGame.SetActive(true);
         }
     }    
 }

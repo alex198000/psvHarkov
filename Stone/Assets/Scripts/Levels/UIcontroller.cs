@@ -9,12 +9,13 @@ namespace Levels
     {
         [SerializeField] private Image _winImage;
         [SerializeField] private Image _defeatImage;
-        //[SerializeField] private Image _canvasImage;
         [SerializeField] private Text _textScore;
         [SerializeField] private int _score;
         //[SerializeField] private GameObject _panelCanvas;
         [SerializeField] private GameObject _winPanel;
         [SerializeField] private GameObject _defeatPanel;
+        [SerializeField] private Transform _cameraPosition;
+
         private Tween _tween;
 
         public int Score { get { return _score; } set { _score = value; } }   // сврйства счета, чтобы поле было приватным
@@ -36,8 +37,10 @@ namespace Levels
             Muhomor.OnPlayerDefeat -= PlayerDefeat;
             ButtonManager.OnNextLevel -= LevelClosed;
             ButtonManager.OnRepeatLevel -= LevelRepeat;
-            _winImage.DOKill();
-            //_canvasImage.DOKill();
+            if (DOTween.instance != null)
+            {
+                _tween?.Kill();
+            }
         }
         private void Start()
         {
@@ -50,12 +53,20 @@ namespace Levels
 
         public void PlayerWin()                                             //обновляем юай win
         {
-            _winPanel.SetActive(true);
+            _tween = _winPanel.transform.DOMove(new Vector3(_cameraPosition.position.x, _cameraPosition.position.y, 0), 1f, true).SetEase(Ease.InBack).SetUpdate(true).OnComplete(() =>
+            {
+                //_panelCanvas.SetActive(false);
+                Time.timeScale = 0;
+            });
         }
 
         public void PlayerDefeat()                                             //обновляем юай defeat
         {
-            _defeatPanel.SetActive(true);
+            _tween = _defeatPanel.transform.DOMove(new Vector3(_cameraPosition.position.x, _cameraPosition.position.y, 0), 1f, true).SetEase(Ease.InBack).SetUpdate(true).OnComplete(() =>
+            {
+                //_panelCanvas.SetActive(false);
+                Time.timeScale = 0;
+            });
         }
 
         public void LevelClosed()

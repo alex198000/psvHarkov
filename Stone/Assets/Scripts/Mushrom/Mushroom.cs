@@ -10,14 +10,7 @@ namespace Levels
         public override void UpdateScore()
         {
             _uiController.Score += bonus; 
-        }
-
-        //public override void DeActiv()
-        //{
-            
-        //        this._objDeactiv.gameObject.SetActive(false);
-            
-        //}
+        }        
     }
 }
 

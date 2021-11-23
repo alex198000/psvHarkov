@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 namespace Levels
@@ -9,6 +10,10 @@ namespace Levels
         [SerializeField] private GameObject _winPanel;
         [SerializeField] private GameObject _defeatPanel;
         [SerializeField] private GameObject _pausePanel;
+        [SerializeField] private Transform _cameraPosition;
+
+        private Tween _tween = null;
+
         void Update()
         {
             MooveBut();
@@ -39,18 +44,30 @@ namespace Levels
         }
         void ESCbutton()                             // кнопка esc или  шаг назад на телефоне
         {
-            if (Input.GetKeyDown(KeyCode.Escape) && _canvasPanel.activeSelf == true && _winPanel.activeSelf == false && _defeatPanel.activeSelf == false && _pausePanel.activeSelf == false)
+            if (Input.GetKeyDown(KeyCode.Escape) && _canvasPanel.activeSelf == true && _winPanel.transform.position.y < 0 && _defeatPanel.transform.position.y < 0 && _pausePanel.transform.position.y < 0)
             {
-                _pausePanel.SetActive(true);
                 _canvasPanel.SetActive(false);
-                Time.timeScale = 0;               
+                _tween = _pausePanel.transform.DOMove(new Vector3(_cameraPosition.position.x, _cameraPosition.position.y, 0), 1f, true).SetEase(Ease.InBack).SetUpdate(true);                
+                Time.timeScale = 0;
             }
-            else if (Input.GetKeyDown(KeyCode.Escape) && _pausePanel.activeSelf == true)
+            else if (Input.GetKeyDown(KeyCode.Escape) && _pausePanel.transform.position.y >= 0)
             {
-                _canvasPanel.SetActive(true);
-                _pausePanel.SetActive(false);
-                Time.timeScale = 1;
-            }                    
+                
+                _tween = _pausePanel.transform.DOMove(new Vector3(_cameraPosition.position.x, _cameraPosition.position.y - 15, 0), 1f, true).SetEase(Ease.InBack).SetUpdate(true).OnComplete(() =>
+                {
+                    _canvasPanel.SetActive(true);
+                    Time.timeScale = 1;
+                });
+                
+            }
+        }
+
+        private void OnDisable()
+        {
+            if (DOTween.instance != null)
+            {
+                _tween?.Kill();
+            }
         }
     }
 }

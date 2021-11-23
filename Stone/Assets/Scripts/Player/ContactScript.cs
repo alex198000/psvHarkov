@@ -15,7 +15,7 @@ namespace Levels
             {
                 fruit.Contact();
                 fruit.UpdateScore();
-                //otherCol.gameObject.SetActive(false);
+                otherCol.gameObject.SetActive(false);
                 OnScorePlus?.Invoke();
             }           
         }
